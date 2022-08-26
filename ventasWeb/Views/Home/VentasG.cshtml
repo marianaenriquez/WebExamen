@@ -1,0 +1,59 @@
+﻿
+@{
+    ViewData["Title"] = "VentasG";
+}
+
+<div class="row">
+
+    <div class="col" id="seleti">
+        <select class="custom-select  mb-4" id="selectV" onchange="cambia_visibles()">
+            <option value="0"></option>
+            <option value="1">Más Vendidos</option>
+            <option value="2">Ventas globales</option>
+        </select>
+    </div>
+
+
+
+</div>
+
+<div id="vendidos">
+    <div class="text-center">
+        <h1 class="display-4">Más Vendidos</h1>
+    </div>
+    <div>
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Nombre</th>
+                    <th scope="col">No. Ventas</th>
+                    <th scope="col">Total</th>
+                </tr>
+            </thead>
+            <tbody id="ventasm">
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<div id="globales">
+    <div class="text-center">
+        <h1 class="display-4">Ventas Globales</h1>
+    </div>
+    <div>
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Nombre</th>
+                    <th scope="col">No. Ventas</th>
+                    <th scope="col">Fecha</th>
+                </tr>
+            </thead>
+            <tbody id="ventasg">
+            </tbody>
+        </table>
+    </div>
+</div>
+</div>

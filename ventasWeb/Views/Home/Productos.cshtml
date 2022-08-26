@@ -1,0 +1,52 @@
+﻿@{
+    ViewData["Title"] = "Productos";
+}
+
+<div class="row">
+
+    <div class="col">
+        <select class="custom-select  mb-4" " id="selectP" onchange="visiblesProd()">
+            <option value=""></option>
+            <option value="1">Productos a comprar</option>
+            <option value="2">Productos en existencia</option>
+        </select>
+    </div>
+</div>
+<div id="comprar">
+    <div class="text-center">
+        <h1 class="display-4">Productos a comprar</h1>
+    </div>
+    <div>
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Nombre</th>
+                    <th scope="col">Descripcion</th>
+                    <th scope="col">Existencias</th>
+                </tr>
+            </thead>
+            <tbody id="tablapc">
+            </tbody>
+        </table>
+    </div>
+</div>
+<div id="existencias">
+    <div class="text-center">
+        <h1 class="display-4">Productos en Existencia</h1>
+    </div>
+    <div>
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Nombre</th>
+                    <th scope="col">Existencia</th>
+                    <th scope="col">No. Vendidos </th>
+                </tr>
+            </thead>
+            <tbody id="tablaex">
+            </tbody>
+        </table>
+    </div>
+</div>

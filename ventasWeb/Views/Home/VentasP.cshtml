@@ -1,0 +1,54 @@
+﻿
+@{
+    ViewData["Title"] = "VentasP";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Ventas por Producto</h1>
+</div>
+
+
+<div> </div>
+
+<div class="row">
+
+    <label class="form-label" for="inputGroupSelect01">Producto: </label>
+    <div class="col">
+        <select class="custom-select  mb-4" id="selectVP">
+            <option value="1">Maestro Limpio 1L</option>
+            <option value="2">Cloralex 1L</option>
+            <option value="3">Cloralex Pastillas 10 Unidades3</option>
+            <option value="4">Pinol 1L.</option>
+            <option value="5">Siempre Limpio 300 Bolsas.</option>
+            <option value="6">El Reluciente. 2 Kilos.</option>
+            <option value="7">El suavecito. Paquete 4 rollos.</option>
+            <option value="8">Cesto Papelero. Capacidad de 1L cubico</option>
+            <option value="9">Toallitas Resplandor. Paquete 70 toallitas.</option>
+        </select>
+    </div>
+
+    <div class="col">
+        <button type="submit" class="btn btn-primary" onclick="buscar()">Buscar</button>
+    </div>
+
+</div>
+
+<div> </div>
+
+<div id="tablaPro">
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Nombre</th>
+                <th scope="col">Cantidad Vendida</th>
+                <th scope="col">Fecha de Venta</th>
+            </tr>
+        </thead>
+        <tbody id="ventapp">
+        </tbody>
+    </table>
+</div>
+
+
+
